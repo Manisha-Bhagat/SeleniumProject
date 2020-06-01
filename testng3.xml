@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/rohitkumar/IdeaProjects/SeleniumProject/src/TestNgExample.java">
+        <groups>
+            <run>
+                <exclude name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="TestNgExample"></class>
+            <class name="TestNG2"></class>
+            <class name="test.TestNG3"></class>
+            <class name="TestNG4"></class>
+        </classes>
+    </test>
+</suite>

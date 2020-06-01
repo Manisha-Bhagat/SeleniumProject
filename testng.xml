@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="3">
+    <parameter name="URL" value="qaclickacademy.com"/>
+    <test verbose="2" preserve-order="true" name="/Users/rohitkumar/IdeaProjects/SeleniumProject/src/TestNgExample.java">
+        <classes>
+            <class name="TestNgExample"></class>
+            <class name="TestNG2"></class>
+        </classes>
+    </test>
+    <test name="Home loan">
+        <classes>
+            <class name="TestNG4">
+                <methods>
+                    <include name="MobileLoginHomeLoan"></include>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+    <test name="car loan">
+        <classes>
+            <class name="test.TestNG3">
+                <methods>
+                    <exclude name="API.*"></exclude>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
